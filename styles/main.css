@@ -1,0 +1,110 @@
+:root {
+    --primary-color: #0d3551;
+    --secondary-color: #154764;
+    --third-color: #1e5978;
+    --accent1-color: #839aac;
+    --accent2-color: #adbdcb;
+    --font-color: white;
+    --accent-font: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+body {
+    max-width: 1400px;
+    margin: auto;
+
+    background-color: gray;
+
+}
+
+
+
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+}
+
+.header-title h1 {
+    padding: 20px 20px 20px 50px;
+}
+
+.header-title img {
+    width: 120px;
+    height: 120px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--third-color);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 24px;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: var(--accent1-color);
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    margin: 10px;
+}
+
+.card {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.course-work {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.tokyo-japan {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.web-and-computer-prog {
+    grid-column: 1 / -1;
+    grid-row: 2;
+}
+
+
+.card h2 {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    padding: 10px;
+    text-align: center;
+}
