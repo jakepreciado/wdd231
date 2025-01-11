@@ -1,26 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --primary-color: #0d3551;
     --secondary-color: #154764;
     --third-color: #1e5978;
-    --accent1-color: #839aac;
-    --accent2-color: #adbdcb;
+    --accent1-color: #c2e3ca;
+    --accent2-color: #eed1d1;
     --font-color: white;
     --accent-font: black;
     font-family: 'Roboto', sans-serif;
 }
 
-
-
 body {
     max-width: 1400px;
     margin: auto;
-
-    background-color: gray;
-
 }
-
-
-
 
 .header-title {
     display: flex;
@@ -31,14 +28,13 @@ body {
 }
 
 .header-title h1 {
-    padding: 20px 20px 20px 50px;
+    padding: 40px 20px 20px 50px;
 }
 
 .header-title img {
     width: 120px;
     height: 120px;
 }
-
 
 nav {
     display: flex;
@@ -51,12 +47,13 @@ nav a {
     color: var(--font-color);
     font-size: 24px;
     padding: 10px;
+    transition: transform 0.3s ease;
 }
 
 nav a:hover {
-    color: var(--accent1-color);
+    color: lightgrey;
+    transform: scale(1.05)
 }
-
 
 main {
     display: grid;
@@ -76,35 +73,234 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.card h2 {
+    background-color: var(--third-color);
+    color: var(--font-color);
+    text-align: center;
+    padding: 10px;
+}
 
 .course-work {
     grid-column: 1;
     grid-row: 1;
+    text-align: center;
+}
+
+.course-work ul {
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+    justify-content: center;
+    text-align: left;
+
 }
 
 .tokyo-japan {
     grid-column: 2;
     grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.tokyo-japan h3 {
+    padding: 10px;
+}
+
+.tokyo-japan img {
+    width: 350px;
+    margin: 10px auto;
 }
 
 .web-and-computer-prog {
     grid-column: 1 / -1;
     grid-row: 2;
-}
-
-
-.card h2 {
-    background-color: var(--accent1-color);
-    color: var(--primary-color);
     text-align: center;
-    padding: 10px;
 }
 
+.web-and-computer-prog div {
+    margin: 20px;
+}
 
+.web-and-computer-prog div button {
+    margin: 5px 15px 0px 15px;
+    background-color: var(--third-color);
+    color: var(--font-color);
+    font-size: 18px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.web-and-computer-prog div button:hover {
+    background-color: var(--primary-color);
+}
+
+#courses-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.course-card {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+}
+
+.course-card.completed {
+    background-color: var(--accent1-color);
+}
+
+.course-card.not-completed {
+    background-color: var(--accent2-color);
+}
+
+.course-details {
+    display: none;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+}
 
 footer {
     background-color: var(--primary-color);
     color: var(--font-color);
     padding: 10px;
     text-align: center;
+}
+
+footer p {
+    padding: 5px;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger-menu .bar {
+    width: 30px;
+    height: 5px;
+    background-color: var(--font-color);
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    main {
+        display: block;
+    }
+
+    body {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .header-title {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .header-title h1 {
+        padding: 30px;
+    }
+
+    .header-title img {
+        width: 100px;
+        height: 100px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .card {
+        width: 100%;
+        margin: auto;
+    }
+
+    .tokyo-japan img {
+        width: 80%;
+    }
+
+    .web-and-computer-prog div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .web-and-computer-prog div button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    #courses-container {
+        grid-template-columns: 1fr;
+    }
+
+    .course-card {
+        margin: 10px auto;
+    }
+
+    #navbar {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Show the hamburger icon on mobile */
+    .hamburger-menu {
+        display: flex;
+        margin-top: 35px;
+        margin-left: 10px;
+    }
+
+    /* Style the navbar when it's visible */
+    #navbar.show {
+        display: flex;
+    }
+
+    /* Adjust links to fit within mobile screen */
+    nav a {
+        font-size: 18px;
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title h1 {
+        text-align: left;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 6px;
+    }
+
+    .tokyo-japan img {
+        width: 90%;
+    }
+
+    .web-and-computer-prog div button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .course-card {
+        padding: 15px;
+        font-size: 14px;
+    }
 }
