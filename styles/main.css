@@ -236,12 +236,6 @@ footer p {
         width: 80%;
     }
 
-    .web-and-computer-prog div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .web-and-computer-prog div button {
         width: 100%;
         margin: 5px 0;
@@ -261,22 +255,23 @@ footer p {
         gap: 10px;
     }
 
-    /* Show the hamburger icon on mobile */
     .hamburger-menu {
         display: flex;
         margin-top: 35px;
         margin-left: 10px;
     }
 
-    /* Style the navbar when it's visible */
     #navbar.show {
         display: flex;
     }
 
-    /* Adjust links to fit within mobile screen */
     nav a {
         font-size: 18px;
         padding: 15px 20px;
+    }
+
+    .course-details {
+        display: none;
     }
 }
 
@@ -302,5 +297,9 @@ footer p {
     .course-card {
         padding: 15px;
         font-size: 14px;
+    }
+
+    .course-details {
+        display: none;
     }
 }
