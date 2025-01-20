@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.header-left div h1 {
+    margin: 0;
+}
+
+.hero {
+    margin-bottom: 20px;
+}
+
+.hero-img {
+    margin: auto;
+}
+
+main {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+    margin: 1rem auto;
+    border: 1px;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.menu a img {
+    padding: 1rem;
+    width: 30px;
+    height: auto;
+    border: 1px solid rgba(15, 29, 46, 0.7);
+    border-radius: 10px;
+}
+
+.menu a img:hover {
+    transform: scale(1.1);
+}
+
+.menu a img::selection {
+    background-color: aqua;
+}
+
+.home-grid {
+    width: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+}
+
+.card,
+.home-card {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.home-card h2 {
+    background-color: #2C3E50;
+    color: white;
+    padding: 10px;
+}
+
+.member-information {
+    margin: auto;
+}
+
+.member-line {
+    display: flex;
+}
+
+.member-information p,
+.member-information a {
+    margin: 5px;
+}
+
+.businesses {
+    max-width: 1200px;
+    gap: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.business-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.business-grid section {
+    text-align: center;
+    background-color: #eee;
+}
+
+.business-card-content {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ////////////////////////////// */
+
+.business-list {
+    display: block;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.business-list .member-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.business-list .member-line h3,
+.business-list .member-line p,
+.business-list .member-line a {
+    margin: auto;
+}
+
+.striped {
+    background-color: #f2f2f2;
+}
+
+/* ////////////////////////////// */
+
+
+.grid img {
+    margin: 5px;
+    box-shadow: 0 0 10px #333;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2C3E50;
+    color: white;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 20px;
+    padding: 10px;
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--third-color);
+}
+
+
+
+
+footer {
+    padding: 20px;
+    background-color: #2C3E50;
+    color: white;
+}
+
+.footer-content {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+}
+
+
+.footer-left h3 {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a img {
+    width: 30px;
+    height: auto;
+    margin: 10px;
+}
+
+footer a img:hover {
+    transform: scale(1.1)
+}
+
+.footer-right p {
+    text-align: right;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}

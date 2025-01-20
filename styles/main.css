@@ -55,10 +55,10 @@ nav a:hover {
     transform: scale(1.05)
 }
 
-main {
+
+.home-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: 2fr 1fr 1fr;
     gap: 10px;
     margin: 10px;
 }

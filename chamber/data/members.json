@@ -1,60 +1,60 @@
 {
-    "companies": [
+    "members": [
         {
-            "companyName": "",
-            "address": "",
-            "contact": ,
-            "website": "",
-            "membership": "",
-            "image": ""
+            "name": "Timbuktu Cafe",
+            "address": "123 Market Street, Timbuktu",
+            "phone": "(123) 456-7890",
+            "website": "https://www.timbuktucafe.com",
+            "image": "images/cafe.jpg",
+            "membershipLevel": 1
         },
         {
-            "companyName": "",
-            "address": "",
-            "contact": ,
-            "website": "",
-            "membership": "",
-            "image": ""
+            "name": "Goldsmith Jewelers",
+            "address": "456 Commerce Ave, Timbuktu",
+            "phone": "(987) 654-3210",
+            "website": "https://www.goldsmithjewelers.com",
+            "image": "images/jewelers.jpg",
+            "membershipLevel": 3
         },
         {
-            "companyName": "",
-            "address": "",
-            "contact": ,
-            "website": "",
-            "membership": "",
-            "image": ""
+            "name": "Silver Cloud IT",
+            "address": "789 Tech Lane, Timbuktu",
+            "phone": "(555) 123-4567",
+            "website": "https://www.silvercloudits.com",
+            "image": "images/it-solutions.jpg",
+            "membershipLevel": 2
         },
         {
-            "companyName": "",
-            "address": "",
-            "contact": ,
-            "website": "",
-            "membership": "",
-            "image": ""
+            "name": "Green Grocers",
+            "address": "321 Farm Road, Timbuktu",
+            "phone": "(888) 456-7890",
+            "website": "https://www.greengrocers.com",
+            "image": "images/grocers.jpg",
+            "membershipLevel": 1
         },
         {
-            "companyName": "",
-            "address": "",
-            "contact": ,
-            "website": "",
-            "membership": "",
-            "image": ""
+            "name": "Golden Fitness",
+            "address": "654 Workout Blvd, Timbuktu",
+            "phone": "(444) 555-6666",
+            "website": "https://www.goldenfitness.com",
+            "image": "images/fitness.jpg",
+            "membershipLevel": 3
         },
         {
-            "companyName": "",
-            "address": "",
-            "contact": ,
-            "website": "",
-            "membership": "",
-            "image": ""
+            "name": "Silver Spoon Diner",
+            "address": "987 Main Street, Timbuktu",
+            "phone": "(333) 222-1111",
+            "website": "https://www.silverspoondiner.com",
+            "image": "images/diner.jpg",
+            "membershipLevel": 2
         },
         {
-            "companyName": "",
-            "address": "",
-            "contact": ,
-            "website": "",
-            "membership": "",
-            "image": ""
+            "name": "Timbuktu Bookstore",
+            "address": "741 Paper Street, Timbuktu",
+            "phone": "(777) 888-9999",
+            "website": "https://www.timbuktubooks.com",
+            "image": "images/bookstore.jpg",
+            "membershipLevel": 1
         }
     ]
 }
