@@ -1,8 +1,16 @@
+// Dates
 const currentYear = new Date().getFullYear();
 document.getElementById("currentYear").textContent = currentYear;
 
 const lastModified = document.lastModified;
 document.getElementById("lastModified").textContent = `Last modification: ${lastModified}`;
+
+// Hamburger Toggle
+document.getElementById('hamburger-menu').addEventListener('click', function() {
+    document.getElementById('navbar').classList.toggle('show');
+});
+
+
 
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
@@ -39,6 +47,7 @@ const displayMembersGrid = (members) => {
         address.textContent = `${member.address}`;
         phone.textContent = `${member.phone}`;
         website.textContent = `${member.website}`;
+        website.setAttribute('href', `${member.website}`);
         logo.setAttribute('src', `${member.image}`);
         logo.setAttribute('alt', `${member.name}'s image/logo`);
         logo.setAttribute('loading', 'lazy');
@@ -76,9 +85,10 @@ const displayMembersList = (members) => {
         let website = document.createElement('a');
 
         businessName.textContent = `${member.name}`;
-        address.textContent = `${member.address}`;
-        phone.textContent = `${member.phone}`;
-        website.textContent = `${member.website}`;
+        address.textContent = `- ${member.address}`;
+        phone.textContent = `- ${member.phone}`;
+        website.textContent = `- ${member.website}`;
+        website.setAttribute('href', `${member.website}`);
 
 
         business.appendChild(line);

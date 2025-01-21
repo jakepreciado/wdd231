@@ -13,19 +13,23 @@ body {
     margin: 0;
 }
 
-.hero {
-    margin-bottom: 20px;
+main {
+    margin: 0 auto;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.hero h1 {
+    padding: 20px;
+    text-align: center;
+    margin: auto;
 }
 
 .hero-img {
     margin: auto;
-}
-
-main {
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: auto;
 }
 
 .menu {
@@ -54,6 +58,7 @@ main {
 .home-grid {
     width: auto;
     display: grid;
+    padding: 20px;
     grid-template-columns: 2fr 1fr 1fr;
     gap: 10px;
 }
@@ -91,7 +96,7 @@ main {
     max-width: 1200px;
     gap: 10px;
     margin: auto;
-    margin-bottom: 20px;
+    padding: 20px;
 }
 
 .business-grid {
@@ -112,8 +117,6 @@ main {
     padding: 20px;
 }
 
-/* ////////////////////////////// */
-
 .business-list {
     display: block;
     justify-content: space-around;
@@ -132,30 +135,29 @@ main {
     margin: auto;
 }
 
-.striped {
-    background-color: #f2f2f2;
-}
-
-/* ////////////////////////////// */
-
 
 .grid img {
     margin: 5px;
     box-shadow: 0 0 10px #333;
 }
 
-
 header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
     background-color: #2C3E50;
     color: white;
 }
 
+.header-right {
+    margin-right: 20px;
+}
+
 .header-left {
     display: flex;
+    margin-left: 20px;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
 }
@@ -181,18 +183,15 @@ nav a {
     padding: 10px;
 }
 
-nav a.active {
-    font-weight: bold;
-}
-
 nav {
     display: flex;
     justify-content: space-around;
-    background-color: var(--third-color);
 }
 
-
-
+.join {
+    text-align: center;
+    padding: 20px;
+}
 
 footer {
     padding: 20px;
@@ -207,7 +206,6 @@ footer {
     align-items: center;
     max-width: 1200px;
 }
-
 
 .footer-left h3 {
     text-align: left;
@@ -232,4 +230,18 @@ footer a img:hover {
     text-align: right;
     font-size: 0.9rem;
     margin-bottom: 5px;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger-menu .bar {
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
 }

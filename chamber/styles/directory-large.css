@@ -1,0 +1,108 @@
+@media (max-width: 1000px) {
+    .hero {
+        text-align: center;
+        display: block;
+    }
+}
+
+@media (max-width: 911px) {
+    .home-grid {
+        display: block;
+        margin: 10px;
+        padding: 0px;
+    }
+    .business-grid {
+        padding: 0px;
+    }
+
+    .businesses {
+        padding: 0px;
+    }
+}
+
+@media (max-width: 782px) {
+    .footer-content,
+    .footer-left,
+    .footer-left h3, .footer-right p {
+        display: block;
+        text-align: center;
+    }
+    .social {
+        margin: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    header {
+        display: block;
+        justify-content: space-between;
+    }
+
+    .header-title {
+        display: flex;
+        color: white;
+        justify-content: center;
+    }
+
+    nav {
+        background-color: #4a6785;
+        width: 100%;
+        text-align: center;
+    }
+
+    #navbar {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        margin: 37.5px;
+    }
+
+    #navbar.show {
+        display: flex;
+    }
+
+    nav a {
+        font-size: 18px;
+
+    }
+
+    .businesses {
+        margin-bottom: 0px;
+    }
+
+    .business-grid {
+        margin: 10px;
+        gap: 10px;
+    }
+
+    .member-line {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+
+    .member-line h3 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title h1 {
+        text-align: left;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 6px;
+    }
+}
