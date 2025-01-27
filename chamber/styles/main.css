@@ -20,6 +20,28 @@ main {
 }
 
 
+.membership-icon {
+    display: block;
+}
+
+.events,
+.weather,
+.forecast {
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    list-style: none;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 11;
+}
+
 .hero h1 {
     padding: 20px;
     text-align: center;
@@ -30,6 +52,20 @@ main {
     margin: auto;
     width: 100%;
     height: auto;
+}
+
+.join {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.58);
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+}
+
+.join p,
+.join a {
+    margin: 10px;
 }
 
 .menu {
@@ -73,6 +109,16 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+
+.card h5 {
+    text-align: center;
+    margin: auto;
+}
+
+.card h2 {
+    margin: auto;
+}
+
 .home-card h2 {
     background-color: #2C3E50;
     color: white;
@@ -99,14 +145,28 @@ main {
     padding: 20px;
 }
 
-.business-grid {
+.spotlight-section {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.business-grid,
+.spotlight-members {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 10px auto;
 }
 
 .business-grid section {
     text-align: center;
     background-color: #eee;
+}
+
+.business-card-header {
+    padding: 10px 10px 0px 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .business-card-content {
@@ -188,10 +248,7 @@ nav {
     justify-content: space-around;
 }
 
-.join {
-    text-align: center;
-    padding: 20px;
-}
+
 
 footer {
     padding: 20px;

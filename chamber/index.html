@@ -19,8 +19,9 @@
         rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/directory-large.css">
-    <script src="scripts/directory.js" defer></script>
+    <link rel="stylesheet" href="styles/main-large.css">
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/home.js" defer></script>
 
 </head>
 
@@ -41,8 +42,8 @@
             </div>
         </div>
         <nav class="header-right" id="navbar">
-            <a href="#home">Home</a>
-            <a href="#directory">Directory</a>
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
             <a href="#join">Join</a>
             <a href="#discover">Discover</a>
 
@@ -51,61 +52,56 @@
 
     <main>
         <section class="hero">
-            <img class="hero-img" src="images/timbuktu-aerial.jpg" alt="Image">
-
-            <h1>Welcome to Timbuktu Chamber of Commerce!</h1>
-
+            <div>
+                <img class="hero-img" src="images/timbuktu-aerial.jpg" alt="Image">
+                <div class="join">
+                    <h1>Welcome to Timbuktu Chamber of Commerce!</h1>
+                    <p>Join us, and become part of a vibrant business community today!</p>
+                    <a href="#join">Join Now</a>                    
+                </div>
+            </div>
         </section>
+
         <section class="home-grid">
             <div class="home-card">
                 <h2>Events</h2>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <div class="events">
+                    <p>The Festival in the Desert</p>
+                    <h3>Festival au Désert 2025</h3>
+                    <p>A music festival that takes place in the Sahara Desert of Mali</p>
+                    <p>- Come celebrate the art of music! -</p>
+                    <p>Friday January 24, 2025 | Starts 1:00pm | Timbuktu</p>
+                </div>
             </div>
             <div class="home-card">
                 <h2>Current Weather</h2>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <div class="weather">
+                    <p>
+                        <span id="current-temp"></span>
+                    </p>
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+            </div>
             </div>
             <div class="home-card">
                 <h2>Weather Forecast</h2>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li class="forecast"><span id="day1"></span></li>
+                    <li class="forecast"><span id="day2"></span></li>
+                    <li class="forecast"><span id="day3"></span></li>
                 </ul>
             </div>
         </section>
 
-        <section class="businesses">
-            <div class="menu">
-                <a id="grid">
-                    <img src="images/grid-icon.png" alt="grid icon">
-                </a>
-                <a id="list">
-                    <img src="images/list-icon.png" alt="list icon">
-                </a>
-            </div>
-            <div class="businesses" id="businesses"></div>
+        <section class="spotlight-section">
+            <h2>Member Spotlight</h2>
+            <div class="spotlight-members businesses" id="members"></div>
         </section>
 
-        <section class="join">
-            <h2>Join Us</h2>
-            <p>Become part of a vibrant business community today.</p>
-            <a class="btn" href="join.html">Join Now</a>
-        </section>
+
     </main>
 
     <footer>
