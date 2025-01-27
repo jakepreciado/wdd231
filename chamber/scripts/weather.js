@@ -46,12 +46,16 @@ function capitalize(str) {
 }
 
 function displayResults(data) {
+
+    let icon = document.createElement('img');
     currentTemp.innerHTML = `${data.main.temp}&deg;F`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', 'Icon indicating the current weather in said city.');
+    icon.setAttribute('src', iconsrc);
+    icon.setAttribute('alt', 'Icon indicating the current weather in said city.');
     captionDesc.textContent = capitalize(desc);
+
+    weatherIcon.appendChild(icon);
 }
 
 function displayForecast(data) {
