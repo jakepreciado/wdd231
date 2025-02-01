@@ -4,24 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timbuktu Chamber of Commerce</title>
+    <title>Thank You - Timbuktu Chamber of Commerce</title>
     <meta name="description"
-        content="This website will serve as a resource hub for businesses in the city of Timbuktu. The site will provide information on local events, host networking opportunities, create business directories, and encourage local shopping. It aims to promote local economic growth, support local businesses, and foster a sense of community between the businesses.">
+        content="Thank you for filling out the form. Your submission has been received and we will be in touch with you shortly.">
     <meta name="author" content="Jake Preciado">
-    <meta property="og:title" content="Chamber Directory Page">
+    <meta property="og:title" content="Thank You - Timbuktu Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://github.com/jakepreciado/wdd231/blob/main/chamber/images/timbuktu.png">
-    <meta property="og:url" content="https://jakepreciado.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://jakepreciado.github.io/wdd231/chamber/thankyou.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-        <link rel="icon" href="favicon.ico">
-        <link rel="stylesheet" href="styles/directory.css">
-    <link rel="stylesheet" href="styles/directory-large.css">
-    <script src="scripts/directory.js" defer></script>
-
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main-large.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
+    <link rel="stylesheet" href="styles/thankyou-large.css">
+    <script src="scripts/thankyou.js" defer></script>
 </head>
 
 <body>
@@ -49,30 +50,49 @@
     </header>
 
     <main>
-        <section class="hero">
-        
-            <h1>Timbuktu Chamber of Commerce Directory</h1>
+        <div class="submissions">
+            <h1>Thank You for Your Application!</h1>
+            <p>We will contact you shortly with more information. Please contact us if you need further assistance with
+                joining.</p>
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td id="firstNameDisplay"></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td id="lastNameDisplay"></td>
+                </tr>
+                <tr>
+                    <td>Organizational Title:</td>
+                    <td id="orgTitleDisplay"></td>
+                </tr>
+                <tr>
+                    <td>Email Address:</td>
+                    <td id="emailDisplay"></td>
+                </tr>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td id="phoneDisplay"></td>
+                </tr>
+                <tr>
+                    <td>Business/Organization Name:</td>
+                    <td id="businessNameDisplay"></td>
+                </tr>
+                <tr>
+                    <td>Membership Level:</td>
+                    <td id="membershipDisplay"></td>
+                </tr>
+                <tr>
+                    <td>Business Description:</td>
+                    <td id="businessDescDisplay"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="button-container">
+            <a href="index.html" class="home-button">Go Home</a>
+        </div>
 
-        </section>
-       
-
-        <section class="businesses">
-            <div class="menu">
-                <a id="grid">
-                    <img src="images/grid-icon.png" alt="grid icon">
-                </a>
-                <a id="list">
-                    <img src="images/list-icon.png" alt="list icon">
-                </a>
-            </div>
-            <div class="businesses" id="businesses"></div>
-        </section>
-
-        <section class="join">
-            <h2>Join Us</h2>
-            <p>Become part of a vibrant business community today.</p>
-            <a class="btn" href="join.html">Join Now</a>
-        </section>
     </main>
 
     <footer>
@@ -86,7 +106,7 @@
             </div>
             <div class="social">
                 <a href="https://youtube.com">
-                    <img src="images/youtube.png" alt="Facebook icon" class="">
+                    <img src="images/youtube.png" alt="Facebook icon" class="" />
                 </a>
                 <a href="https://twitter.com">
                     <img src="images/twitter.png" alt="Twitter icon">
@@ -106,4 +126,3 @@
 </body>
 
 </html>
-

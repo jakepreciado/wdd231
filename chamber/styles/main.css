@@ -43,7 +43,7 @@ main {
 }
 
 .hero h1 {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     margin: auto;
 }
@@ -64,8 +64,28 @@ main {
 }
 
 .join p,
-.join a {
+.join button {
+    margin-top: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.join button {
+    font-size: 18px;
+    background-color: #2C3E50;
+    border-radius: 8px;
+    padding: 10px;
     margin: 10px;
+    transition: all 0.3s ease;
+}
+
+.join button:hover {
+    background-color: #161e27;
+}
+
+.join button a {
+    color: white;
+    text-decoration: none;
 }
 
 .menu {

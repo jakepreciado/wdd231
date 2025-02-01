@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timbuktu Chamber of Commerce</title>
+    <meta name="description"
+        content="This website will serve as a resource hub for businesses in the city of Timbuktu. The site will provide information on local events, host networking opportunities, create business directories, and encourage local shopping. It aims to promote local economic growth, support local businesses, and foster a sense of community between the businesses.">
+    <meta name="author" content="Jake Preciado">
+    <meta property="og:title" content="Chamber Directory Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/jakepreciado/wdd231/blob/main/chamber/images/timbuktu.png">
+    <meta property="og:url" content="https://jakepreciado.github.io/wdd231/chamber/directory.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main-large.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <a id="logo_link" href="directory.html">
+                <img src="images/timbuktu.png" alt="Chamber Logo" class="logo" />
+            </a>
+            <div>
+                <h1>Timbuktu</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <nav class="header-right" id="navbar">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="#discover">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="join">
+            <div class="join-form">
+                <h2>Become A Member And Apply Today!</h2>
+                <form action="thankyou.html" method="get">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required title="First Name"
+                        autocomplete="given-name">
+
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required title="Last Name"
+                        autocomplete="family-name">
+
+                    <label for="org-title">Organizational Title:</label>
+                    <input type="text" id="org-title" name="org-title" required title="Organizational Title"
+                        pattern="[A-Za-z\s\-]{7,}" autocomplete="organization-title">
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required title="Email Address" autocomplete="email"
+                        placeholder="example@domain.com">
+
+                    <label for="phone">Mobile Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required title="Mobile Phone" autocomplete="tel">
+
+                    <label for="business-name">Business/Organization Name:</label>
+                    <input type="text" id="business-name" name="business-name" required title="Business Name"
+                        autocomplete="organization">
+
+                    <label for="membership">Membership Level:</label>
+                    <select id="membership" name="membership" required>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+
+                    <label for="business-desc">Business/Organization Description:</label>
+                    <textarea id="business-desc" name="business-desc" title="Description"></textarea>
+
+                    <input type="hidden" name="timestamp" value="<?php echo date('Y-m-d H:i:s'); ?>">
+
+                    <input class="submit-btn" type="submit" value="Submit">
+                </form>
+            </div>
+            <div>
+                <div class="membership-cards">
+                    <div class="membership-card" id="np-card">
+                        <div class="membership-card-left">
+                            <h2>NP Membership</h2>
+                            <p>No Fee</p>
+                            <button onclick="showModal('npModal')">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="membership-card" id="bronze-card">
+                        <div class="membership-card-left">
+                            <h2>Bronze Membership</h2>
+                            <p>Basic Level</p>
+                            <button onclick="showModal('bronzeModal')">Learn More</button>
+                        </div>
+                        <div class="membership-medal">
+                            <img src="images/bronze.png" alt="Bronze medal icon">
+                        </div>
+                    </div>
+                    <div class="membership-card" id="silver-card">
+                        <div class="membership-card-left">
+                            <h2>Silver Membership</h2>
+                            <p>Standard Level</p>
+                            <button onclick="showModal('silverModal')">Learn More</button>
+                        </div>
+                        <div class="membership-medal">
+                            <img src="images/silver.png" alt="Silver medal icon">
+                        </div>
+                    </div>
+                    <div class="membership-card" id="gold-card">
+                        <div class="membership-card-left">
+                            <h2>Gold Membership</h2>
+                            <p>Premium Level</p>
+                            <button onclick="showModal('goldModal')">Learn More</button>
+                        </div>
+                        <div class="membership-medal">
+                            <img src="images/gold.png" alt="Gold medal icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="npModal" class="modal">
+            <div class="modal-content">
+                <span class="modal-close" onclick="closeModal('npModal')">&times;</span>
+                <h3>NP Membership Benefits</h3>
+                <p>Details about NP Membership benefits.</p>
+            </div>
+        </div>
+
+        <div id="bronzeModal" class="modal">
+            <div class="modal-content">
+                <span class="modal-close" onclick="closeModal('bronzeModal')">&times;</span>
+                <h3>Bronze Membership Benefits</h3>
+                <p>Details about Bronze Membership benefits.</p>
+            </div>
+        </div>
+
+        <div id="silverModal" class="modal">
+            <div class="modal-content">
+                <span class="modal-close" onclick="closeModal('silverModal')">&times;</span>
+                <h3>Silver Membership Benefits</h3>
+                <p>Details about Silver Membership benefits.</p>
+            </div>
+        </div>
+
+        <div id="goldModal" class="modal">
+            <div class="modal-content">
+                <span class="modal-close" onclick="closeModal('goldModal')">&times;</span>
+                <h3>Gold Membership Benefits</h3>
+                <p>Details about Gold Membership benefits.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>Timbuktu Chamber of Commerce</h3>
+                <p>10 Rue De La Paix</p>
+                <p>Timbuktu, Mali 999</p>
+                <p>info@timbuktucc.org</p>
+                <p>(223) 555-2330</p>
+            </div>
+            <div class="social">
+                <a href="https://youtube.com">
+                    <img src="images/youtube.png" alt="Facebook icon" class="">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.png" alt="Twitter icon">
+                </a>
+                <a href="https://linkedin.com">
+                    <img src="images/linkedin.png" alt="Instagram icon">
+                </a>
+            </div>
+            <div class="footer-right">
+                <p>WDD231 Class Project</p>
+                <p>Jake Preciado</p>
+                <p>&copy; <span id="currentYear"></span> Timbuktu Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
