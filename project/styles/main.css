@@ -1,0 +1,31 @@
+:root {
+    --primary-color: #D68100;
+    --secondary-color: #141717;
+    --accent1-color: #ffffff;
+    --accent2-color: #141414;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+h1,
+h2 {
+    color: var(--primary-color);
+}
+
+.section {
+    background-color: var(--accent2-color);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.section img {
+    max-width: 1400px;
+}
