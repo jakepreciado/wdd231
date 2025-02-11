@@ -1,3 +1,8 @@
+// Hamburger Toggle
+document.getElementById('hamburger-menu').addEventListener('click', function () {
+    document.getElementById('navbar').classList.toggle('show');
+});
+
 // Dates
 const currentYear = new Date().getFullYear();
 document.getElementById("currentYear").textContent = currentYear;
@@ -7,11 +12,6 @@ document.getElementById("lastModified").textContent = `Last modification: ${last
 
 const formSubmission = document.lastModified;
 document.getElementById("timeStamp").textContent = `${lastModified}`;
-
-// Hamburger Toggle
-document.getElementById('hamburger-menu').addEventListener('click', function () {
-    document.getElementById('navbar').classList.toggle('show');
-});
 
 // Modal
 function showModal(modalId) {

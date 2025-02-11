@@ -4,6 +4,14 @@
     font-family: 'Inter', sans-serif;
 }
 
+main h1 {
+    background-color: #2C3E50;
+    color: white;
+    border-top: 2px solid white;
+    text-align: center;
+    padding: 20px;
+}
+
 body {
     max-width: 1400px;
     margin: auto;
