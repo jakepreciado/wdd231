@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Map form values to display elements
     const formValues = {
+
         "first-name": "firstNameDisplay",
         "last-name": "lastNameDisplay",
         "org-title": "orgTitleDisplay",
@@ -10,7 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "phone": "phoneDisplay",
         "business-name": "businessNameDisplay",
         "membership": "membershipDisplay",
-        "business-desc": "businessDescDisplay"
+        "business-desc": "businessDescDisplay",
+        "formTimestamp": "formTimestampDisplay"
     };
 
     // Loop through and update each display element

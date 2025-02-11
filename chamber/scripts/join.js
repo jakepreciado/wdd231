@@ -10,8 +10,10 @@ document.getElementById("currentYear").textContent = currentYear;
 const lastModified = document.lastModified;
 document.getElementById("lastModified").textContent = `Last modification: ${lastModified}`;
 
-const formSubmission = document.lastModified;
-document.getElementById("timeStamp").textContent = `${lastModified}`;
+document.addEventListener("DOMContentLoaded", function() {
+    const timestamp = document.getElementById("formTimestamp");
+    timestamp.value = new Date().toISOString();
+});
 
 // Modal
 function showModal(modalId) {
@@ -23,6 +25,7 @@ function closeModal(modalId) {
 }
 
 // Form
+Const
 const firstNameInput = document.getElementById("first-name");
 const lastNameInput = document.getElementById("last-name");
 const orgTitleInput = document.getElementById("org-title");
@@ -30,6 +33,7 @@ const emailInput = document.getElementById("email");
 const phoneInput = document.getElementById("phone");
 const businessNameInput = document.getElementById("business-name");
 const membershipSelect = document.getElementById("membership");
+const date = document.getElementById("formTimestamp");
 
 const firstName = firstNameInput.value;
 const lastName = lastNameInput.value;
@@ -40,4 +44,6 @@ const businessName = businessNameInput.value;
 const membership = membershipSelect.value;
 
 console.log(firstName, lastName, orgTitle, email, phone, businessName, membership);
+
+console.log(timestamp);
 
