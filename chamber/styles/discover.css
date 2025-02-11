@@ -1,0 +1,72 @@
+.visit-message {
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin: 30px;
+}
+
+.place-card {
+    margin: 20px;
+}
+
+.places {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
+}
+
+.places div {
+    background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-areas:
+        "photograph name"
+        "photograph description"
+        "photograph location"
+        "photograph button";
+}
+
+.places div h2 {
+    color: #2C3E50;
+    text-align: center;
+    grid-area: name;
+    padding: 10px;
+}
+
+.places div figure {
+    grid-area: photograph;
+    margin: auto;
+    transition: all 0.3s ease;
+}
+
+.places div figure img {
+    width: 300px;
+    height: 200px;
+
+}
+
+.places div address {
+    grid-area: location;
+    color: #555;
+    padding: 10px;
+
+}
+
+.places div p {
+    grid-area: description;
+    margin: 0;
+    padding: 10px;
+}
+
+.places button {
+    grid-area: button;
+    border: none;
+    background-color: #feb600;
+    width: 100px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+}

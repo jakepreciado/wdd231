@@ -1,0 +1,28 @@
+@media (max-width: 640px) {
+    .places {
+        grid-template-columns: 1fr;
+    }
+
+    .place-card {
+        margin: 10px;
+    }
+
+    .places div {
+        grid-template-areas:
+            "name"
+            "photograph"
+            "description"
+            "location"
+            "button";
+    }
+
+    .places div figure {
+        margin: auto;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .places div figure:hover {
+        transform: scale(1.05);
+    }
+}
