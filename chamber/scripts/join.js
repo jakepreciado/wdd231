@@ -41,13 +41,3 @@ const membership = membershipSelect.value;
 
 console.log(firstName, lastName, orgTitle, email, phone, businessName, membership);
 
-
-// const params = new URLSearchParams(window.location.search);
-// console.log(params);
-
-// // Set the content of the span elements to the form values
-// document.getElementById('first-name').textContent = params.get('first-name');
-// document.getElementById('last-name').textContent = params.get('last-name');
-// document.getElementById('email').textContent = params.get('email');
-// document.getElementById('mobile').textContent = params.get('mobile');
-// document.getElementById('business-name').textContent = params.get('business-name');
