@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Arkuna Interactive - A video game development studio providing insights, project showcases, and industry updates.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contact.css">
+
+    <script src="scripts/contact.js" defer></script>
+    <title>Arkuna Interactive</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="hamburger-menu" id="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <nav id="navbar">
+            <a href="index.html">
+                <h1>Arkuna Interactive</h1>
+            </a>
+            <a href="development.html">Development</a>
+            <a href="about.html">Who We Are</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <h2 class="section-header">Lets Get In touch.</h2>
+    <p class="contact-header-caption">Questions? Suggestions? Want to say hi? Send a message through the form and we'll be in touch soon.</p>
+    <main>
+        <div class="contact-form">
+            <form id="contact-form">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required title="First Name"
+                    autocomplete="given-name">
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required title="Last Name"
+                    autocomplete="family-name">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required title="Email Address" autocomplete="email">
+
+                <label for="phone">Mobile Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required title="Mobile Phone" autocomplete="tel">
+
+                <label for="business-name">Business/Organization Name (Optional):</label>
+                <input type="text" id="business-name" name="business-name" title="Business Name"
+                    autocomplete="organization">
+
+                <label for="business-desc">Message:</label>
+                <textarea id="business-desc" name="business-desc" title="Description" rows="10"></textarea>
+
+                <input class="submit-btn" type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+
+    <div id="submissionModal" class="modal">
+        <div class="modal-content">
+            <div id="submissionList"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Arkuna Interactive</p>
+        <p>&copy; <span id="currentYear"></span> | Jake Preciado | Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

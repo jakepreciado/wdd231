@@ -1,0 +1,49 @@
+{
+    "games": [
+        {
+            "title": "Dark Souls",
+            "bio": "Dark Souls is a 2011 action RPG that set the standard for the Soulslike genre. Known for its unforgiving difficulty, deep lore, and interconnected world, it challenges players with precise combat and intricate level design.",
+            "image": "images/dark-souls.jpg"
+        },
+        {
+            "title": "Bloodborne",
+            "bio": "Bloodborne is a gothic horror-inspired action RPG featuring fast-paced combat and Lovecraftian horror themes. It encourages aggressive playstyles and rewards risk-taking with its unique rally mechanic.",
+            "image": "images/bloodborne.jpg"
+        },
+        {
+            "title": "Sekiro: Shadows Die Twice",
+            "bio": "Sekiro departs from traditional RPG mechanics, focusing on precision-based sword combat and a deep parry system. Set in a fictionalized late 1500s Japan, it follows a lone shinobi on a quest for vengeance.",
+            "image": "images/sekiro.jpg"
+        },
+        {
+            "title": "Elden Ring",
+            "bio": "Elden Ring expands the Soulslike formula into an open world, offering unparalleled exploration, deep lore co-written by George R.R. Martin, and a refined combat system that balances traditional and mounted combat.",
+            "image": "images/elden-ring.jpg"
+        },
+        {
+            "title": "Demon's Souls",
+            "bio": "Demon's Souls, the precursor to the Souls series, introduced many core mechanics of the genre. The 2020 remake by Bluepoint Games revitalized the experience with stunning visuals and modernized gameplay.",
+            "image": "images/demons-souls.jpg"
+        },
+        {
+            "title": "Lies of P",
+            "bio": "Lies of P is a Soulslike inspired by the tale of Pinocchio, featuring a dark, twisted world and a unique weapon customization system. Its fast and deliberate combat draws clear inspiration from Bloodborne.",
+            "image": "images/lies-of-p.jpg"
+        },
+        {
+            "title": "Nioh 2",
+            "bio": "Nioh 2 blends Soulslike mechanics with fast, combo-heavy combat and deep RPG customization. Set in Sengoku-era Japan, it allows players to harness supernatural Yokai abilities to turn the tide of battle.",
+            "image": "images/nioh-2.jpg"
+        },
+        {
+            "title": "Mortal Shell",
+            "bio": "Mortal Shell is a Soulslike that introduces the Shell mechanic, allowing players to inhabit fallen warriors with unique abilities. Its deliberate combat and eerie atmosphere provide a fresh take on the genre.",
+            "image": "images/mortal-shell.jpg"
+        },
+        {
+            "title": "The Surge 2",
+            "bio": "The Surge 2 takes the Soulslike formula into a sci-fi setting, featuring a unique limb-targeting system that lets players dismember enemies to acquire new gear. It offers fast, strategic combat and deep customization.",
+            "image": "images/the-surge-2.jpg"
+        }
+    ]
+}

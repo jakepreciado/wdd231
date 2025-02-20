@@ -1,0 +1,58 @@
+{
+    "development": [
+        {
+            "title": "Dark Souls",
+            "development": "Dark Souls entered full development in 2008. Early concepts revolved around making a challenging, non-linear game with tight combat mechanics. The game went through several iterations, with key adjustments made to its interconnected world design and difficulty curve.",
+            "year": 2011,
+            "image": "images/dark-souls.jpg"
+        },
+        {
+            "title": "Bloodborne",
+            "development": "Bloodborne's development began shortly after the success of the previous title. The team wanted to explore faster-paced combat and a gothic horror setting. Extensive changes were made to combat mechanics, focusing on aggression and quick reflexes, with a focus on atmosphere and storytelling.",
+            "year": 2015,
+            "image": "images/bloodborne.jpg"
+        },
+        {
+            "title": "Sekiro: Shadows Die Twice",
+            "development": "Sekiro marked a departure from traditional RPG mechanics. The game’s development began with the idea of focusing on tight, precise swordplay. The addition of the parry system and stealth mechanics were the result of months of refinement and testing, ensuring it stood apart from other games.",
+            "year": 2019,
+            "image": "images/sekiro.jpg"
+        },
+        {
+            "title": "Elden Ring",
+            "development": "Elden Ring was a collaborative project between a team of developers and a renowned fantasy writer. The development process began in 2017, blending world-building expertise with narrative depth. The game saw significant work on its open-world mechanics and the integration of horseback combat.",
+            "year": 2022,
+            "image": "images/elden-ring.jpg"
+        },
+        {
+            "title": "Demon's Souls",
+            "development": "The original Demon's Souls was released in 2009, but its 2020 remake was a fresh take on the concept. The development of the remake focused heavily on modernizing the visuals and refining gameplay mechanics while staying true to the original's core design principles.",
+            "year": 2020,
+            "image": "images/demons-souls.jpg"
+        },
+        {
+            "title": "Lies of P",
+            "development": "Lies of P's development began in 2019, with the team looking to reimagine the Pinocchio story within the Soulslike genre. Major changes were made to the protagonist’s abilities, focusing on an intricate weapon customization system. The dark setting and combat system were honed through extensive trial and error.",
+            "year": 2023,
+            "image": "images/lies-of-p.jpg"
+        },
+        {
+            "title": "Nioh 2",
+            "development": "Nioh 2's development was an evolution of the original Nioh's mechanics. Early concepts expanded on the supernatural Yokai system, allowing players to control both human and Yokai abilities. The combat system was refined to include deep customization and more intricate combo mechanics.",
+            "year": 2020,
+            "image": "images/nioh-2.jpg"
+        },
+        {
+            "title": "Mortal Shell",
+            "development": "Mortal Shell’s development was driven by the desire to create a fresh take on the Soulslike formula. The unique Shell mechanic, which allows players to inhabit fallen warriors, was a major innovation. The development team focused on creating an atmospheric world and challenging combat, while incorporating strategic elements into gameplay.",
+            "year": 2020,
+            "image": "images/mortal-shell.jpg"
+        },
+        {
+            "title": "The Surge 2",
+            "development": "The Surge 2 took the original game's formula into a sci-fi dystopian world. The game’s development revolved around refining the limb-targeting combat system, adding more depth to the strategic elements. The team also focused on expanding the world-building and providing players with greater customization options.",
+            "year": 2019,
+            "image": "images/the-surge-2.jpg"
+        }
+    ]
+}
